@@ -11,6 +11,14 @@
         <h1>SmoothScroll</h1>
         <h2>Apresentações da Web Reinventadas</h2>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#destaque">Destaque</a></li>
+            <li><a href="#exemplos">Exemplos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#cta">Experimente agora</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="destaque">
             <h3>Destaque</h3>
@@ -59,6 +67,9 @@
         <p>&copy; 2024 SmoothScroll. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>
