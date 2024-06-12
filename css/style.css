@@ -10,6 +10,7 @@ header {
     color: #fff;
     height: 50vw;
     background-size: 100% 100%;
+    position: relative;
 }
 
 .centro{
@@ -23,6 +24,7 @@ header {
 
 .lista{
     display: none;
+    position: absolute;
 }
 
 .aba:checked ~ .lista{
