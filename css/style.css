@@ -28,6 +28,7 @@ ul li{
 
 .lista{
     display: none;
+    padding: 12px 0;
     position: absolute;
     background-color: #4CAF50;
 }
