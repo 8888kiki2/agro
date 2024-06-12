@@ -6,12 +6,27 @@ body {
 }
 
 header {
-    background-color: #333;
+   background-image: url(../por-do-sol-sobre-uma-colheita-vibrante-da-natureza-do-campo-de-trigo-dourado-gerada-pela-inteligencia-artificial_25030-67195.avif);
     color: #fff;
     padding: 200px;
+ 
+}
+
+.centro{
     text-align: center;
 }
 
+#menu{
+    display: none;
+}
+
+.lista{
+    display: none;
+}
+
+.aba:checked ~ .lista{
+display: block;
+}
 h1, h2, h3, h4 {
     margin: 0;
 }
