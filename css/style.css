@@ -1,7 +1,7 @@
 /* Estilos gerais */
 body {
     font-family: comic sans-serif;
-    margin: 0;
+    margin: 5;
     padding: 0;
 }
 
@@ -13,7 +13,6 @@ header {
     position: relative;
     text-align: center;
     font-family: monospace;
-    font-weight: lighter;
 }
 
 .centro{
