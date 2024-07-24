@@ -1,19 +1,4 @@
-/* Estilos para telas menores que 768px (celulares) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    header {
-        text-align: center;
-    }
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    nav li {
-        display: inline;
-        margin-right: 10px;
-    }
+
 /* Estilos gerais */
 body {
     font-family: comic sans-serif;
