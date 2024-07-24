@@ -1,129 +1,73 @@
+
 /* Estilos gerais */
 body {
-    font-family: 'Comic Sans MS', cursive; /* Troquei para uma fonte mais legível */
+    font-family: 'Comic Sans MS', cursive; /* Fonte Comic Sans para todo o texto */
     margin: 0;
-    padding: 20px; /* Aumentei o padding para melhor espaçamento */
+    padding: 20px; /* Espaçamento ao redor do conteúdo */
 }
 
 header {
     background-image: url(imagem/52c99d0f-0b79-467e-89a2-e0499e038b95.jpg);
     color: #050036;
-    text-decoration: underline;
-    height: 200px; /* Ajustei para uma altura fixa em pixels para melhor adaptação */
-    background-size: cover; /* Usando cover para cobrir o header */
-    position: relative;
     text-align: center;
-    font-size: 1.5em; /* Tamanho de fonte maior para melhor legibilidade */
-    font-family: sans-serif;
+    padding: 50px 0; /* Espaçamento interno no header */
+    background-size: cover; /* Cobrir o header com a imagem */
+    font-size: 1.5em; /* Tamanho da fonte aumentado */
 }
 
-@media (max-width: 768px) {
-    /* Estilos para telas menores que 768px (celulares) */
-    header {
-        height: 150px; /* Reduzi a altura para telas menores */
-        font-size: 1.2em; /* Fonte um pouco menor para telas menores */
-    }
-
-    #menu {
-        display: block; /* Mostra o menu para telas menores */
-    }
-
-    .lista {
-        display: block;
-        padding: 10px 0; /* Ajustei o padding para melhor espaçamento */
-        position: static; /* Ajustei a posição para static para melhor fluxo no documento */
-        background-color: #4CAF50;
-        text-align: center; /* Centralizei os links */
-    }
+/* Menu */
+#menu-toggle {
+    display: none; /* Esconder o checkbox que controla o menu */
 }
 
-ul li {
-    list-style: none;
-    margin: 0;
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.lista a {
-    display: block;
-    color: #c8ff00;
-    text-decoration: none;
-    padding: 10px; /* Ajustei o padding dos links */
-}
-
-.lista a:hover {
-    background-color: #45a049;
-}
-
-h1, h2, h3, h4 {
-    margin: 0;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-/* Outros estilos permanecem iguais */
-
-
-section {
-    margin-bottom: 40px;
-}
-
-/* Estilos específicos */
-#destaque {
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-#exemplos {
-    background-color: #ddd;
-    padding: 20px;
-}
-
-.slide {
-    margin-bottom: 20px;
-}
-
-#depoimentos {
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
-.depoimento {
-    border-left: 3px solid #333;
-    padding-left: 10px;
-    margin-bottom: 20px;
-}
-
-cite {
-    display: block;
-    margin-top: 10px;
-    font-style: italic;
-}
-
-#cta {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.btn {
+.menu li {
     display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
 }
 
-.btn:hover {
-    background-color: #45a049;
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Cantos arredondados nos botões */
+    background-color: #f2f2f2; /* Cor de fundo dos links */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.menu a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos específicos para telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0; /* Ajuste de padding no header para telas menores */
+    }
+
+    .menu {
+        display: none; /* Esconder o menu na versão mobile por padrão */
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .menu {
+        display: block; /* Mostrar o menu quando o checkbox estiver marcado */
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px; /* Espaçamento entre os itens do menu na versão mobile */
+    }
 }
