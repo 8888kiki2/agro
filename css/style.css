@@ -1,51 +1,58 @@
-
 /* Estilos gerais */
 body {
-    font-family: comic sans-serif;
+    font-family: 'Comic Sans MS', cursive; /* Troquei para uma fonte mais legível */
     margin: 0;
-    padding: 5;
+    padding: 20px; /* Aumentei o padding para melhor espaçamento */
 }
 
 header {
-   background-image: url(imagem/52c99d0f-0b79-467e-89a2-e0499e038b95.jpg);
-    color: #050036; 
+    background-image: url(imagem/52c99d0f-0b79-467e-89a2-e0499e038b95.jpg);
+    color: #050036;
     text-decoration: underline;
-    height: 15vw;
-    background-size: 150% 150%;
+    height: 200px; /* Ajustei para uma altura fixa em pixels para melhor adaptação */
+    background-size: cover; /* Usando cover para cobrir o header */
     position: relative;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.5em; /* Tamanho de fonte maior para melhor legibilidade */
     font-family: sans-serif;
 }
 
-.centro{
-    text-align: center;
-    padding-top: 50%;
+@media (max-width: 768px) {
+    /* Estilos para telas menores que 768px (celulares) */
+    header {
+        height: 150px; /* Reduzi a altura para telas menores */
+        font-size: 1.2em; /* Fonte um pouco menor para telas menores */
+    }
+
+    #menu {
+        display: block; /* Mostra o menu para telas menores */
+    }
+
+    .lista {
+        display: block;
+        padding: 10px 0; /* Ajustei o padding para melhor espaçamento */
+        position: static; /* Ajustei a posição para static para melhor fluxo no documento */
+        background-color: #4CAF50;
+        text-align: center; /* Centralizei os links */
+    }
 }
 
-#menu{
-    display: none;
-}
-
-ul li{
+ul li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.lista{
-    display: none;
-    padding: 12px 0;
-    position: absolute;
-    background-color: #4CAF50;
-}
-
-.lista a{
+.lista a {
+    display: block;
     color: #c8ff00;
     text-decoration: none;
-}
-.aba:checked ~ .lista{
-display: block;
+    padding: 10px; /* Ajustei o padding dos links */
 }
 
+.lista a:hover {
+    background-color: #45a049;
+}
 
 h1, h2, h3, h4 {
     margin: 0;
@@ -54,6 +61,13 @@ h1, h2, h3, h4 {
 main {
     padding: 20px;
 }
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Outros estilos permanecem iguais */
+
 
 section {
     margin-bottom: 40px;
