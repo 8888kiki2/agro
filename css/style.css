@@ -1,73 +1,115 @@
 
 /* Estilos gerais */
 body {
-    font-family: 'Comic Sans MS', cursive; /* Fonte Comic Sans para todo o texto */
+    font-family: comic sans-serif;
     margin: 0;
-    padding: 20px; /* Espaçamento ao redor do conteúdo */
+    padding: 5;
 }
 
 header {
-    background-image: url(imagem/52c99d0f-0b79-467e-89a2-e0499e038b95.jpg);
-    color: #050036;
+   background-image: url(imagem/52c99d0f-0b79-467e-89a2-e0499e038b95.jpg);
+    color: #050036; 
+    text-decoration: underline;
+    height: 15vw;
+    background-size: 150% 150%;
+    position: relative;
     text-align: center;
-    padding: 50px 0; /* Espaçamento interno no header */
-    background-size: cover; /* Cobrir o header com a imagem */
-    font-size: 1.5em; /* Tamanho da fonte aumentado */
+    font-size: 14px;
+    font-family: sans-serif;
 }
 
-/* Menu */
-#menu-toggle {
-    display: none; /* Esconder o checkbox que controla o menu */
-}
-
-.menu {
+.centro{
     text-align: center;
+    padding-top: 50%;
 }
 
-.menu ul {
-    list-style-type: none;
-    padding: 0;
+#menu{
+    display: none;
 }
 
-.menu li {
-    display: inline-block;
-    margin-right: 20px; /* Espaçamento entre os itens do menu */
+ul li{
+    list-style: none;
 }
 
-.menu a {
+.lista{
+    display: none;
+    padding: 12px 0;
+    position: absolute;
+    background-color: #4CAF50;
+}
+
+.lista a{
+    color: #c8ff00;
     text-decoration: none;
-    color: #333;
-    padding: 10px 15px; /* Espaçamento interno dos links */
-    border-radius: 5px; /* Cantos arredondados nos botões */
-    background-color: #f2f2f2; /* Cor de fundo dos links */
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+.aba:checked ~ .lista{
+display: block;
 }
 
-.menu a:hover {
-    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+
+h1, h2, h3, h4 {
+    margin: 0;
 }
 
-/* Estilos específicos para telas menores */
-@media (max-width: 768px) {
-    header {
-        padding: 30px 0; /* Ajuste de padding no header para telas menores */
-    }
+main {
+    padding: 20px;
+}
 
-    .menu {
-        display: none; /* Esconder o menu na versão mobile por padrão */
-        text-align: center;
-    }
+section {
+    margin-bottom: 40px;
+}
 
-    #menu-toggle:checked + .menu {
-        display: block; /* Mostrar o menu quando o checkbox estiver marcado */
-    }
+/* Estilos específicos */
+#destaque {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
-    .menu ul {
-        display: block;
-    }
+#exemplos {
+    background-color: #ddd;
+    padding: 20px;
+}
 
-    .menu li {
-        display: block;
-        margin-bottom: 10px; /* Espaçamento entre os itens do menu na versão mobile */
-    }
+.slide {
+    margin-bottom: 20px;
+}
+
+#depoimentos {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.depoimento {
+    border-left: 3px solid #333;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#cta {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
 }
