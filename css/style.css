@@ -34,7 +34,7 @@ ul li{
 }
 
 .lista a{
-    color: #f2f2f2;
+    color: #c8ff00;
     text-decoration: none;
 }
 .aba:checked ~ .lista{
