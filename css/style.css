@@ -13,6 +13,7 @@ header {
     position: relative;
     text-align: center;
     font-family: monospace;
+    font-weight: 300;
 }
 
 .centro{
